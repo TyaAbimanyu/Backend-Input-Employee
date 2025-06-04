@@ -23,6 +23,13 @@ if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
     exit(1);
 }
 
+header('Access-Control-Allow-Methods: *');
+header('Access-Control-Allow-Headers: *' );
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Max-Age: *');
+header('Access-Control-Allow-Credentials: true');
+
+
 /*
  *---------------------------------------------------------------
  * SET THE CURRENT DIRECTORY
